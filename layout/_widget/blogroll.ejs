@@ -6,9 +6,9 @@
         <% theme.links.forEach(function(link){ %>
          <li class="blogroll">
            <% if (link.logo){ %>
-             <i class="fa fa-<%- link.logo %>"></i>
+             <i class="fa fa-<%- link.logo %> fa-fw"></i>
            <% } else { %>
-             <i class="fa fa-anchor"></i>
+             <i class="fa fa-anchor fa-fw"></i>
            <% } %>
            <%- link_to(link.url, link.name) %>
           </li>

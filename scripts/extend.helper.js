@@ -133,6 +133,11 @@ var thumbnail = function(post, cls){
   return rtn;
 };
 
+var is_active = function(name) {
+  var reg = new RegExp('^' + name.toLowerCase());
+  return reg.test(this.path)?"active":"";
+};
+
 helper.register('ct_name_to_id', ct_name_to_id);
 helper.register('_list_tags', _list_cats_tags);
 helper.register('_list_categories', _list_cats_tags);
@@ -143,3 +148,4 @@ helper.register('is_page', is_page);
 helper.register('is_wiki', is_wiki);
 helper.register('wiki_category', wiki_category);
 helper.register('thumbnail', thumbnail);
+helper.register('is_active', is_active);

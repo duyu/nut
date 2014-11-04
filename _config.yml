@@ -54,11 +54,14 @@ google_plus:
 
 links:
 - name: Github
-  url: https://github.com/
+  url: https://github.com/duyu
   logo: github
 - name: Google+
-  url: https://plus.google.com/
+  url: https://google.com/+AndersDu
   logo: google-plus
+- name: FaceBook
+  url: https://facebook.com/duyu1988
+  logo: facebook
 
 feed:
   type: atom

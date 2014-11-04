@@ -6,11 +6,11 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="<%= config.root %>"><%= config.title %><%if (hexo.debug) {%>[<span class='testIE IE9'>IE9</span><span class='testIE IE8'>IE8</span><span class='testIE IE7'>lte IE7</span>]<%}%></a>
+    <a class="navbar-brand" href="<%= config.root %>" <%if (is_home()) {%> style="color:white" <% } %>  >HOME<%if (hexo.debug) {%>[<span class='testIE IE9'>IE9</span><span class='testIE IE8'>IE8</span><span class='testIE IE7'>lte IE7</span>]<%}%></a>
     <div class="collapse navbar-collapse nav-menu">
       <ul class="nav navbar-nav">
       <% theme.menu.forEach(function(m){ %>
-        <li>
+        <li class="<%= is_active(m.name) %>">
           <a href="<%- m.path %>">
             <i class="fa fa-<%- m.logo %>"></i>
             <%- m.name %>
