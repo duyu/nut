@@ -1,3 +1,5 @@
+# This is a fork from [Nut](https://github.com/seff/nut), and I made some small changes to it. Maybe more work in the future, who knows...
+
 # Nut
 
 A new theme for [Hexo](http://zespia.tw/hexo/) based on the new default theme [Landscape](https://github.com/hexojs/hexo-theme-landscape), and get some ideas form [HaHack](http://www.hahack.com/)
